@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/superficie"
+    android:padding="24dp">
+
+    <EditText
+        android:id="@+id/et_dialog_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ej: Entregar taller de Cálculo"
+        android:inputType="text"
+        android:textColor="@color/texto_principal"
+        android:textColorHint="@color/texto_secundario"
+        android:backgroundTint="@color/rojo_primario" />
+
+    <Button
+        android:id="@+id/btn_dialog_fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccionar fecha límite"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/rojo_primario"
+        android:textColor="@color/texto_principal" />
+
+    <TextView
+        android:id="@+id/tv_dialog_fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sin fecha seleccionada"
+        android:textColor="@color/rojo_suave"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btn_dialog_hora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccionar hora límite"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/rojo_primario"
+        android:textColor="@color/texto_principal" />
+
+    <TextView
+        android:id="@+id/tv_dialog_hora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hora límite: 08:00 (por defecto)"
+        android:textColor="@color/rojo_suave"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

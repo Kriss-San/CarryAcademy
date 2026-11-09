@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_oscuro">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/gradiente_rojo"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="28dp"
+        android:paddingBottom="18dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CarryAcademy"
+            android:textColor="@color/texto_principal"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.02" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tu asistente que no te deja procrastinar"
+            android:textColor="#CCF2EEEE"
+            android:textSize="13sp"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_materias"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingTop="10dp"
+        android:paddingBottom="90dp"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_materia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:src="@android:drawable/ic_input_add"
+        app:tint="@color/texto_principal"
+        app:backgroundTint="@color/rojo_primario"
+        app:layout_constraintBottom_toTopOf="@id/barra_inferior"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="Nueva materia" />
+
+    <LinearLayout
+        android:id="@+id/barra_inferior"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/fondo_oscuro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_recordatorios"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/fondo_pill"
+            android:text="Tareas"
+            android:textColor="@color/texto_principal"
+            android:textSize="13sp"
+            android:textAllCaps="false"
+            android:drawableStart="@drawable/ic_tareas"
+            android:drawablePadding="6dp"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:layout_marginEnd="6dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_config"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/fondo_pill"
+            android:text="Ajustes"
+            android:textColor="@color/texto_principal"
+            android:textSize="13sp"
+            android:textAllCaps="false"
+            android:drawableStart="@drawable/ic_ajustes"
+            android:drawablePadding="6dp"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_stats"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/fondo_pill"
+            android:text="Stats"
+            android:textColor="@color/texto_principal"
+            android:textSize="13sp"
+            android:textAllCaps="false"
+            android:drawableStart="@drawable/ic_stats"
+            android:drawablePadding="6dp"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:layout_marginStart="6dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.CarryAcademy" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/rojo_primario</item>
+        <item name="colorPrimaryVariant">@color/rojo_profundo</item>
+        <item name="colorOnPrimary">@color/texto_principal</item>
+        <item name="colorSecondary">@color/rojo_suave</item>
+        <item name="android:colorBackground">@color/fondo_oscuro</item>
+        <item name="android:windowBackground">@color/fondo_oscuro</item>
+        <item name="android:statusBarColor">@color/rojo_profundo</item>
+        <item name="android:navigationBarColor">@color/fondo_oscuro</item>
+        <item name="android:textColorPrimary">@color/texto_principal</item>
+        <item name="android:textColorSecondary">@color/texto_secundario</item>
+        <item name="android:windowAnimationStyle">@style/AnimacionesActividad</item>
+    </style>
+
+    <style name="AnimacionesActividad">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+</resources>

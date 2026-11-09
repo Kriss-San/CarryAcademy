@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="rojo_primario">#D64550</color>
+    <color name="rojo_profundo">#A32E39</color>
+    <color name="rojo_suave">#F0A6AB</color>
+    <color name="fondo_oscuro">#131314</color>
+    <color name="superficie">#1E1F23</color>
+    <color name="superficie_clara">#26272B</color>
+    <color name="texto_principal">#F2EEEE</color>
+    <color name="texto_secundario">#9BA0A6</color>
+</resources>

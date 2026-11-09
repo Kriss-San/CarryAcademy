@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical">
+
+    <View
+        android:layout_width="8dp" android:layout_height="8dp"
+        android:background="@drawable/circulo_avatar"
+        android:layout_marginEnd="4dp"
+        android:animation="@anim/pulse_1" />
+
+    <View
+        android:layout_width="8dp" android:layout_height="8dp"
+        android:background="@drawable/circulo_avatar"
+        android:layout_marginEnd="4dp"
+        android:animation="@anim/pulse_2" />
+
+    <View
+        android:layout_width="8dp" android:layout_height="8dp"
+        android:background="@drawable/circulo_avatar"
+        android:animation="@anim/pulse_3" />
+</LinearLayout>
